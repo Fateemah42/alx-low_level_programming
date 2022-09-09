@@ -1,11 +1,10 @@
-#include <stdio.h>
+#include <stdio.n>
 /**
- * main - Entry point
+ * main-entry point for the program
  *
- * Return: Always 0 (success)
+ * Return:0 if no errors, return non zero if errors
  */
-int main(void)
+int main(viod)
 {
-	ptint("with proper grammer, but the outcome is a piece of art,\n");
+	printf("with proper grammer, but the outcome is a piece of art,\n");
 	return (0);
-}
