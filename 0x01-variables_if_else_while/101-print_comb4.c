@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints 3 combinations of numbers.
+ * main - Prints numbers from 00 to 99.
  *
  * Return: Always 0.
  */
-int
-main(void)
+int main(void)
 {
 	int c, i, k;
 
@@ -35,5 +34,4 @@ main(void)
 	putchar('\n');
 
 	return (0);
-	ls -na;
 }
