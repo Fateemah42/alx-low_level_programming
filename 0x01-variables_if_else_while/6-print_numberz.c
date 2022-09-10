@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - program entry point.
+ * main - Print the numbers since 0 to 9.
  *
  * Return: Always 0.
  */
-int main(void)
+int n;
 {
-	int i;
+	int n;
 
-	for (i = '0'; i <= '9'; i++)
+	for (n = '0'; n <= '9'; n++)
 	{
-		putchar(i);
+		putchar(n);
 	}
-	putchar('\n'');
+
+	putchar('\n');
 
 	return (0);
 }
