@@ -1,19 +1,17 @@
 #include "main.h"
-
 /**
- * main - Prints _putchar as a message.
- *
- * Return: Always 0.
+ *  * main - Entry point
+ *   *
+ *    * Return: always 0(Success)
  */
 int main(void)
 {
-	int ascii_val[] = {95, 112, 117, 116, 99, 104, 97, 114};
-	int a;
+	char str[] = "_putchar";
+	int ch;
 
-	for (a = 0; a < 8; a++)
-	{
-		_putchar(ascii_val[a]);
-	}
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
 	_putchar('\n');
+
 	return (0);
 }
