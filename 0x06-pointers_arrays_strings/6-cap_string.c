@@ -1,26 +1,27 @@
-#include "main.h"
-#include <stdio.h>
+
+ #include "main.h"
 
 /**
- * _abs - value absolute
- *
- * @n: The int to print
- * Return: Always 0.
+ * * cap_string - this is the capitalization function
+ * * @x: string param
+ * * Return: returns the capitalized version of the string
  */
-int _abs(int n)
+char *cap_string(char *x)
 {
-	if (n < 0)
-	{
-		return (n * (-1));
-	}
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	else if (n == 0)
+	while (x[a])
 	{
-		return (0);
+		i = 0;
+		while (i < len)
+		{
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
+		}
+		a++;
 	}
-
-	else
-	{
-		return (n);
-	}
+	return (x);
 }
