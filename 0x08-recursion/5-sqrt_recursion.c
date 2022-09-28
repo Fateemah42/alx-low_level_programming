@@ -1,8 +1,7 @@
 #include "main.h"
 int squareroot(int n, int i);
 /**
- * _sqrt_recursion - function that returns the natural square root of a number,
- * no loop
+ * _sqrt_recursion - no loop, 1. 2nd function - checks for perfect square
  * @n: input
  * Return: 0
  */
