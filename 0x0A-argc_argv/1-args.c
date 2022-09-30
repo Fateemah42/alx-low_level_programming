@@ -2,17 +2,14 @@
 #include "main.h"
 /**
  * main - Entry point
- * @argc: arguments
- * @argv: array pointing to arguments
+ * @argc: Count arguments
+ * @argv: Arguments
  * Return: 0
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-	int i;
+	(void) argv; /*Ignore argv*/
+	printf("%d\n", argc - 1);
 
-	for (i = 0; i < argc; i++)
-	{
-	}
-	printf("%d\n", i - 1);
 	return (0);
 }
