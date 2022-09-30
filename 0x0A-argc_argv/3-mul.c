@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * @argc: Argument count
+ * main - prints the multiplication of two integers
+ * @argc: argument count
  * @argv: argument vector
- * Return: 0 if true, 1 if false
+ * * Return: 0 if true, 1 if false
  */
 int main(int argc, char *argv[])
 {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		printf("%d\n", a *b);
+		printf("%d\n", a * b);
 		return (0);
 	}
 	printf("Error\n");
